@@ -1,0 +1,1 @@
+weirdReverse=a=>a.sort(q=>1) // https://www.codewars.com/kata/reverse-it-quickly/train/javascript
