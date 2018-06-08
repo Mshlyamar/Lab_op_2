@@ -9,24 +9,24 @@ function removeZeros(array) {
   // to use any Array or Object prototype methods such as .shift(), .push(), etc
   
   // the correctly sorted array should be returned.
-  let kek = []
-  let  j = 0
+  let arr1 = []
+  let j = 0
   let k = 0
-  let lel = []
+  let arr2 = []
   let z = 0
   let pop = []
   for(let i = 0; i<array.length; i++){
     if(array[i]!= 0 || array[i] + '' == 'false'){
-      kek[j] = array[i]
+      arr1[j] = array[i]
     }
     else{    
       if(array[i] == 0){
         if(typeof(array[i]) == 'string'){
-          lel[z] = '0'
+          arr2[z] = '0'
           z++
         }
         else{
-          lel[z] = 0
+          arr2[z] = 0
           z++
         }
       }     
@@ -35,12 +35,12 @@ function removeZeros(array) {
     j++
   }
   j = 0
-  for(let i = 0; i<kek.length + lel.length; i++){
-    if(i<kek.length){
-      pop[i] = kek[i]
+  for(let i = 0; i<arr1.length + arr2.length; i++){
+    if(i<arr1.length){
+      pop[i] = arr1[i]
     }
     else{
-      pop[i] = lel[j]
+      pop[i] = arr2[j]
       j++
     }
   }
